@@ -1,0 +1,57 @@
+.sidebar {
+  width: 230px;
+  float: right;
+
+  &-title {
+    font-size: $fontSize-M;
+    border-left: 3px solid $color-bland;
+    padding: 5px 10px;
+    background: $color-sub;
+  }
+
+  li {
+    // display: table;
+    border-bottom: 1px solid $color-sub;
+    width: 100%;
+    // text-align: left;
+
+    a{
+      padding: 15px 24px 15px 0;
+      color: $color-text;
+      display: block;
+      position: relative;
+
+      &::after {
+        content: $icon-arrowLine-right;
+        font-family: "symbols";
+        color: $color-bland;
+        width: 24px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -1em;
+      }
+    }
+  }
+
+  section {
+    margin-top: 40px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1040px) {
+  .sidebar {
+    width: 770px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+input,
+textarea {
+  outline: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #666;
+  display: block;
+  -webkit-appearance: none;
+  padding: 10px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+
+  &:focus {
+    border: 1px solid #999;
+  }
+}
+
+textarea {
+  height: 150px;
+}
+
+input {
+  display: block;
+  padding: 10px;
+
+  &::placeholder{
+    color: $color-text-thin;
+  }
+}
+
+label {
+  font-weight: 500;
+}
+
+
+input[type="submit"]{
+  border: none;
+  font-size: 1em;
+  width: 160px;
+  height: 44px;
+  color: #fff;
+  background: $color-bland;
+  background: linear-gradient(#303030, $color-bland);
+  display: inline-block;
+  cursor: pointer;
+  transition: all  0.3s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+}
+
+button {
+  padding: 0;
+}

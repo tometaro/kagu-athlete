@@ -1,0 +1,47 @@
+/* Color */
+
+//Bland Color
+$color-bland: #00897B;
+
+//Background
+$color-base: #fff;
+$color-sub: #f3f3f3;
+
+//Text
+$color-text: #101010;
+$color-text-white: #fff;
+// $color-text-link: #aaa;
+$color-text-thin: #9f9f9f;
+$color-text-link: #9f9f9f;
+
+//Border
+$color-border: #dfdfdf;
+$color-border-deep: #404040;
+
+//Button
+// $color_button: #666;
+
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$font-main: 'Roboto','ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'游ゴシック','Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+$font-sub: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+
+/* Font Size */
+
+$fontSize-base: 14px;
+$fontSize-XXL: 2.074rem;
+$fontSize-XL: 1.728rem;
+$fontSize-L: 1.44rem;
+$fontSize-M: 1.2rem;
+$fontSize-S: 0.833rem;
+$fontSize-XS: 0.694rem;
+
+/* icon */
+$icon-zoom: "\EA0A";
+$icon-arrow-right: "\EA03";
+$icon-arrow-left: "\EA02";
+$arrowTwo-right: "\EA07";
+$icon-arrowTwo-left: "\EA06";
+$icon-arrowLine-right: "\EA05";

@@ -1,0 +1,92 @@
+.keyVisual {
+  height: 300px;
+  background: $color-sub;
+  position:relative;
+
+  &-wrap {
+    width: 1040px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &-none {
+      width: 100%;
+    }
+  }
+
+  &-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    z-index: 999;
+  }
+
+  &-gradation {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(243, 243, 243, 1), rgba(243, 243, 243, 0),rgba(243, 243, 243, 0), rgba(243, 243, 243, 1));
+    padding-top: 60px;
+    display: flex;
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+
+    &-catePage{
+      margin: 0 auto;
+    }
+  }
+
+  &-titleBlock {
+    width: 100%;
+    text-align: center;
+
+    &-left {
+      text-align: left;
+    }
+  }
+
+  &-title {
+    font-size: 1.728rem;
+  }
+
+  &-read {
+    font-family: $font-sub;
+    font-size: 0.833rem;
+    margin-top: 10px;
+    color: $color-text-thin;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .keyVisual {
+    &-wrap {
+      width: 770px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .keyVisual {
+    padding: 0 20px;
+    &-wrap {
+      width: 100%;
+    }
+  }
+}

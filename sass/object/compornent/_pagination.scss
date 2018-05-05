@@ -1,0 +1,96 @@
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0 10px;
+    // display: inline-block;
+    // transform: translate(0, 0);
+  }
+
+  a {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    color: $color-text;
+    border: 1px solid $color-bland;
+    border-radius: 4px;
+    font-family: "symbols";
+
+    &:hover {
+      background: $color-bland;
+      color: $color-sub;
+      opacity: 1;
+
+    }
+
+  }
+
+  span {
+    display: none;
+    // position: absolute;
+    // top: -9999px;
+    // left: -9999px;
+  }
+
+  .current{
+    a {
+      color: $color-sub;
+      background-color: $color-bland;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  .first a::before {
+    content: $icon-arrowTwo-left;
+  }
+  .last a::after {
+
+    content: $arrowTwo-right;
+  }
+  .previous a::before {
+
+    content: $icon-arrow-left;
+  }
+  .next a::after {
+
+    content: $icon-arrow-right;
+  }
+}
+
+// @media only screen and ( max-width: 768px ) {
+//   .pagination {
+//     .first,
+//     .last {
+//       position: absolute;
+//       top: -9999px;
+//       left: -9999px;
+//     }
+//   }
+// }
+
+@media only screen and ( max-width: 500px ) {
+  .pagination li {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .pagination li.current,
+  .pagination li.first,
+  .pagination li.last,
+  .pagination li.previous,
+  .pagination li.next{
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+
+  // .pagination li.previous a { border-left-width: 0; }
+}

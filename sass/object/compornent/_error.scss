@@ -1,0 +1,38 @@
+.error {
+  height: 400px;
+  background: radial-gradient(#dfdfdf, #f7f7f7);
+  text-align: center;
+  width: 100%;
+  position: relative;
+
+  &-title,
+    &-block {
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+  }
+
+  &-title {
+    font-size: $fontSize-XL;
+    z-index: 2;
+  }
+
+  &-404 {
+    color: $color-base;
+    font-size: 150px;
+    font-weight: 600;
+    z-index: 1;
+    line-height: 1;
+  }
+
+  &-small {
+    color: $color-base;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+}

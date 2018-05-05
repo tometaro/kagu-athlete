@@ -1,0 +1,121 @@
+/*!
+Theme Name: kagu
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kagu
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+kagu is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*==============================================================
+# Foundation
+==============================================================*/
+
+@import "foundation/reset";
+@import "foundation/variables";
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+// @import "foundation/accessibility";
+
+/* Base */
+
+html {
+  box-sizing: border-box;
+  font-size: $fontSize-base;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+  }
+
+body {
+  font-family: $font-main;
+  word-break:break-all;
+  word-wrap: break-word;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: .1rem;
+  font-feature-settings : "palt";
+}
+
+h1,h2,h3,h4 {
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text-link;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	overflow: hidden;
+}
+
+/*==============================================================
+# Layout
+==============================================================*/
+
+@import "layout/header";
+@import "layout/section";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/*==============================================================
+# Object
+==============================================================*/
+
+/* Component
+------------------------------------------------------------- */
+
+@import "object/compornent/navi";
+@import "object/compornent/hero";
+@import "object/compornent/article";
+@import "object/compornent/articleList";
+@import "object/compornent/comment";
+@import "object/compornent/pagination";
+@import "object/compornent/button";
+@import "object/compornent/search";
+@import "object/compornent/breadcrumbs";
+@import "object/compornent/form";
+@import "object/compornent/naviToggle";
+@import "object/compornent/keyVisual";
+@import "object/compornent/spNavi";
+@import "object/compornent/error";
+@import "object/compornent/footerNavi";
+
+/* Utility
+------------------------------------------------------------- */
+
+
+
+/* Animation
+------------------------------------------------------------- */
+@import "object/animation/stroke";
+@import "object/animation/fadeIn";

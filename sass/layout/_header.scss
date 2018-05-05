@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    top:0;
+    transition: 1s ease-in-out;
+    display: flex;
+
+    *:first-child {
+      margin-right: auto;
+    }
+
+    &-branding {
+        width: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &-logo-type {
+      color: $color-bland;
+      font-weight: bold;
+    }
+
+    &-logo-mark {
+        width: 30px;
+        height: 30px;
+    }
+
+    &-bg {
+      background: rgba(255,255,255,.9);
+    }
+
+  }
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 0;
+
+        &-logo-type {
+            display: none;
+        }
+      }
+    }

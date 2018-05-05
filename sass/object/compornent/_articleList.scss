@@ -1,0 +1,67 @@
+.articleList {
+  display: inline-table;
+  font-size: 0;
+  text-align: center;
+  letter-spacing: normal;//firefoxカラム落ち防止
+
+  li {
+    display: inline-table;
+    margin: 20px;
+    width: 320px;
+
+    text-align: left;
+  }
+
+  &-image,&-noImage {
+    height: 180px;
+    width: 320px;
+    border-radius: 4px;
+  }
+
+  &-image {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  img{
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-noImage {
+    position: relative;
+    z-index: 99999;
+    background: rgba(0, 0, 0, .03);
+    display: block;
+  }
+
+  a {
+    display: block;
+    letter-spacing: 0.1rem;
+  }
+
+  &-title {
+    line-height: 2;
+    margin: 10px 0 5px 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &-read {
+    color : $color-text-thin;
+    font-size: 0.833rem;
+    font-family: $font-sub;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .articleList {
+    li {
+      margin: 25px 10px;
+    }
+  }
+}

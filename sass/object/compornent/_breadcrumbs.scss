@@ -1,0 +1,36 @@
+.breadcrumbs{
+  font-size: 12px;
+  background: $color-base;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &-inner {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: $color-text;
+  }
+
+  a {
+    color: $color-text-thin;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .breadcrumbs{
+    &-inner {
+      width: 770px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs{
+
+    &-inner {
+      width: 100%;
+      padding: 10px 20px;
+
+    }
+  }
+}
