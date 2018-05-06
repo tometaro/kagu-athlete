@@ -26,10 +26,8 @@ get_header(); ?>
 	<?php get_template_part( 'template-parts/cvArea' ); ?>
 
 	<div class="section">
-		<div class="section-innerWrap">
-			<div class="section-inner">
-				<p>神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
-			</div>
+		<div class="section-wrapper">
+			<p>神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで<br>他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
 		</div>
 	</div>
 
@@ -40,7 +38,7 @@ get_header(); ?>
 			<div class="section-inner">
 				<div class="section-innerWrap">
 					<div class="section-titleWrap">
-						<h2 class="section-title"><?php echo $category->cat_name; ?></h2>
+						<h2 class="title-underLine"><?php echo $category->cat_name; ?></h2>
 						<p class="section-read"><?php echo $category->category_description; ?></p>
 					</div>
 					<ul class="articleList">
@@ -52,7 +50,7 @@ get_header(); ?>
 						<?php endwhile; endif; ?>
 					</ul>
 					<div class="button-wrapper">
-						<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
+						<a class="button button-ghost" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
 					</div>
 				</div>
 			</div>

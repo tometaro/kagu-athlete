@@ -1,22 +1,23 @@
 .button {
-  // font-size: 14px;
-  padding: 8px 0;
+  background: $color-bland;
+  padding: 8px 30px;
+  color: $color-text-white;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+
+  &-ghost {
+  padding: 7px 30px;
   width: 180px;
+  background-color: transparent;
   color: $color-bland;
   border: 1px solid $color-bland;
-  display: inline-block;
-  // letter-spacing: 1em;
-  // text-indent:1em;
-  border-radius: 4px;
 
-  &:hover {
-    color: $color-text-white;
-    background: $color-bland;
-    opacity: 1;
-  }
-
-  a {
-    line-height: 20px;
+    &:hover {
+      color: $color-text-white;
+      background: $color-bland;
+      opacity: 1;
+    }
   }
 
   &-wrapper {

@@ -1,5 +1,5 @@
 .cvArea {
-  background: #eaeaea;
+  background: $color-sub;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -14,30 +14,38 @@
     font-size: $fontSize-M;
     font-weight: 600;;
   }
-  &-button,
-  &-button-ghost {
-    padding: 10px 30px;
-    border-radius: 4px;
-  }
 
-  &-button  {
+  &-wrap {
+    display: flex;
 
-    background: #aaa;
-    background-color: $color-bland;
-    color: #fff;
-
-    &-ghost {
-      border: 1px solid $color-bland;
-      color: $color-bland;
-      background: none;
-
-      &:hover {
-        background: $color-bland;
-        color: #fff;
-        opacity: 1;
-      }
+    a:first-child {
+        margin-right: 20px;
     }
   }
+  // &-button,
+  // &-button-ghost {
+  //   padding: 10px 30px;
+  //   border-radius: 4px;
+  // }
+  //
+  // &-button  {
+  //
+  //   background: #aaa;
+  //   background-color: $color-bland;
+  //   color: #fff;
+  //
+  //   &-ghost {
+  //     border: 1px solid $color-bland;
+  //     color: $color-bland;
+  //     background: none;
+  //
+  //     &:hover {
+  //       background: $color-bland;
+  //       color: #fff;
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
 }
 
 @media only screen and (max-width: 1040px) {
@@ -55,27 +63,35 @@
       margin: 0 ;
     }
 
-    &-title,
-    &-button {
-      width: 100%;
-    }
     &-title {
+      width: 100%;
       margin-bottom: 15px;
     }
 
-    &-button,
-    &-button-ghost {
-      padding: 10px 0;
-    }
-
-    &-button {
-      margin-bottom: 20px;
-    }
-
-    &-button-ghost {
-      width: calc( 50% - 10px );
+    a {
+      width: 100%;
+      padding: 8px 0;
 
     }
+
+    &-wrap {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+  //   &-button,
+  //   &-button-ghost {
+  //     padding: 10px 0;
+  //   }
+  //
+  //   &-button {
+  //     margin-bottom: 20px;
+  //   }
+  //
+  //   &-button-ghost {
+  //     width: calc( 50% - 10px );
+  //
+  //   }
   }
 
 }

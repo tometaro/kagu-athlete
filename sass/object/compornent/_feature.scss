@@ -1,3 +1,41 @@
 .feature {
-  // background: $color-sub;
+  background: $color-sub;
+
+  &-wrap {
+    display: flex;
+  }
+
+  &-section {
+    display: block;
+    width: 50%;
+    border-radius: 4px;
+    margin: 30px 40px 0 0;
+    padding: 40px 30px;
+    background: $color-base;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  &-selectionTitle {
+    font-size: $fontSize-L;
+    color: $color-text;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1040px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .feature{
+    &-wrap {
+      flex-wrap: wrap;
+    }
+    &-section {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+.title {
+
+  &-underLine {
+    font-size: $fontSize-L;
+    text-align: center;
+    position: relative;
+    padding-bottom: 13px;
+
+    &::after {
+      content: '';
+      border-bottom: 3px solid $color-bland;
+      width: 20px;
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
