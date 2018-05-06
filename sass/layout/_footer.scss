@@ -1,7 +1,7 @@
 .footer {
   font-size: 0.833rem;
-  color: $color-text-thin;
-  background: $color-bland;
+  color: $color-text-white;
+  background: #455A64;
   overflow: hidden;
 
   &-wrap {
@@ -29,12 +29,8 @@
   }
 
   &-logo-type {
-    height: 40px;
-    fill: $color-base;
-
-    svg {
-      height: 100%;
-    }
+    font-size: $fontSize-XL;
+    font-weight: 600;
   }
 
   &-logo-mark {
@@ -44,12 +40,12 @@
 
   &-info {
     padding: 20px;
-    border-top: 1px solid $color-border-deep;
+    border-top: 1px solid rgba(255,255,255,.3);
     text-align: center;
     font-size: 0.833rem;
   }
   a {
-    color: $color-text-thin;
+    color: $color-text-white;
   }
 }
 

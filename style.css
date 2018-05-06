@@ -124,20 +124,22 @@ a {
   z-index: 999999;
   top: 0;
   transition: 1s ease-in-out;
-  display: flex; }
+  display: flex;
+  background: #fff; }
   .header *:first-child {
     margin-right: auto; }
   .header-branding {
     width: auto;
     display: flex;
     align-items: center;
-    padding: 0 20px; }
+    padding: 0 10px; }
   .header-logo-type {
     color: #00897B;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.2rem; }
   .header-logo-mark {
-    width: 30px;
-    height: 30px; }
+    width: 40px;
+    height: 40px; }
   .header-bg {
     background: rgba(255, 255, 255, 0.9); }
 
@@ -199,8 +201,8 @@ a {
 
 .footer {
   font-size: 0.833rem;
-  color: #9f9f9f;
-  background: #00897B;
+  color: #fff;
+  background: #455A64;
   overflow: hidden; }
   .footer-wrap {
     width: 1040px;
@@ -217,20 +219,18 @@ a {
     display: flex;
     align-items: center; }
   .footer-logo-type {
-    height: 40px;
-    fill: #fff; }
-    .footer-logo-type svg {
-      height: 100%; }
+    font-size: 1.728rem;
+    font-weight: 600; }
   .footer-logo-mark {
     width: 50px;
     height: 50px; }
   .footer-info {
     padding: 20px;
-    border-top: 1px solid #404040;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     font-size: 0.833rem; }
   .footer a {
-    color: #9f9f9f; }
+    color: #fff; }
 
 @media only screen and (max-width: 1040px) {
   .footer-wrap {
@@ -333,6 +333,7 @@ a {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
   .hero-logoVisul {
     position: absolute;
+    background: url(images/mainVisual.png);
     height: 100%;
     width: 100%;
     background-position: center center;
@@ -873,6 +874,52 @@ button {
     line-height: 1;
     letter-spacing: 2rem;
     margin-right: -2rem; }
+
+.cvArea {
+  background: #eaeaea;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cvArea > * {
+    margin: 0 10px;
+    text-align: center; }
+  .cvArea-title {
+    font-size: 1.2rem;
+    font-weight: 600; }
+  .cvArea-button, .cvArea-button-ghost {
+    padding: 10px 30px;
+    border-radius: 4px; }
+  .cvArea-button {
+    background: #aaa;
+    background-color: #00897B;
+    color: #fff; }
+    .cvArea-button-ghost {
+      border: 1px solid #00897B;
+      color: #00897B;
+      background: none; }
+      .cvArea-button-ghost:hover {
+        background: #00897B;
+        color: #fff;
+        opacity: 1; }
+
+@media only screen and (max-width: 840px) {
+  .cvArea {
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    justify-content: space-between; }
+    .cvArea > * {
+      margin: 0; }
+    .cvArea-title, .cvArea-button {
+      width: 100%; }
+    .cvArea-title {
+      margin-bottom: 15px; }
+    .cvArea-button, .cvArea-button-ghost {
+      padding: 10px 0; }
+    .cvArea-button {
+      margin-bottom: 20px; }
+    .cvArea-button-ghost {
+      width: calc( 50% - 10px); } }
 
 /* Utility
 ------------------------------------------------------------- */

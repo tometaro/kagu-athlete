@@ -20,11 +20,11 @@ jQuery(function($){
     $('.naviToggle-block-shadow').fadeOut();
   });
 
-  $(function() {
-    setTimeout(function(){
-      $('.hero-text').animate({ opacity: "1" }, { duration: 3000, easing: 'swing', });
-    },3000);
-  });
+  // $(function() {
+  //   setTimeout(function(){
+  //     $('.hero-text').animate({ opacity: "1" }, { duration: 3000, easing: 'swing', });
+  //   },3000);
+  // });
 
   $(window).on('load',function(){
 

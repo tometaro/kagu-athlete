@@ -5,6 +5,7 @@
     top:0;
     transition: 1s ease-in-out;
     display: flex;
+    background: $color-base;
 
     *:first-child {
       margin-right: auto;
@@ -14,17 +15,18 @@
         width: auto;
         display: flex;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     &-logo-type {
       color: $color-bland;
       font-weight: bold;
+      font-size: $fontSize-M;
     }
 
     &-logo-mark {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     &-bg {

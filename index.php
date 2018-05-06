@@ -20,14 +20,20 @@ get_header(); ?>
 				<p class="hero-text"><?php bloginfo('description'); ?></p>
 			</div>
 		</div>
-		<div class="glitch imgloaded">
-			<div class="hero-logoVisul glitch__img"></div>
-			<div class="hero-logoVisul glitch__img"></div>
-			<div class="hero-logoVisul glitch__img"></div>
-			<div class="hero-logoVisul glitch__img"></div>
-			<div class="hero-logoVisul glitch__img"></div>
+		<div class="hero-logoVisul"></div>
+	</div>
+
+	<?php get_template_part( 'template-parts/cvArea' ); ?>
+
+	<div class="section">
+		<div class="section-innerWrap">
+			<div class="section-inner">
+				<p>神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
+			</div>
 		</div>
 	</div>
+
+	<?php get_template_part( 'template-parts/feature' ); ?>
 
 	<div class="section">
 		<?php $categories = get_categories(); foreach($categories as $category) :?>
