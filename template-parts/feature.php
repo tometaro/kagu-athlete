@@ -7,7 +7,7 @@
         <div class="button button-ghost">詳細はこちら</div>
       </a>
       <a class="feature-section">
-        <div class="feature-selectionTitle">婚礼家具買取<br>無料引き取り強化中</div>
+        <div class="feature-selectionTitle">大型家具<br>一斉引き取り歓迎</div>
         <div class="button button-ghost">詳細はこちら</div>
       </a>
     </div>

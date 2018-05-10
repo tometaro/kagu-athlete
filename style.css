@@ -662,7 +662,6 @@ input[type="submit"] {
   height: 44px;
   color: #fff;
   background: #00897B;
-  background: linear-gradient(#303030, #00897B);
   display: inline-block;
   cursor: pointer;
   transition: all  0.3s ease; }
