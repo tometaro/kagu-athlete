@@ -5,6 +5,6 @@
       <div class="articleList-noImage"></div>
     </div>
     <div class="articleList-title"><?php the_title(); ?></div>
-    <p class="articleList-read"><?php echo the_time('Y.m.d'); ?></p>
+    <p class="articleList-read"><?php echo the_time('Y.m.d'); ?><?php the_category(' &bull; '); ?></p>
   </a>
 </li>
