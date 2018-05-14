@@ -2,13 +2,57 @@
   <div class="section-wrapper">
     <h2 class="title-underLine">買取特集</h2>
     <div class="feature-wrap">
-      <a class="feature-section">
-        <div class="feature-selectionTitle">婚礼家具買取<br>無料引き取り強化中</div>
-        <div class="button button-ghost">詳細はこちら</div>
+      <a class="feature-section" href="/index.php?page_id=4">
+        <div class="feature-sectionGradation">
+          <div class="feature-sectionWrap">
+            <div class="feature-sectionTitle">
+              <?php
+              $page_id = 4;
+              $content = get_page($page_id);
+              //タイトルの出力
+              echo $content -> post_title;
+              ?>
+            </div>
+            <div class="button button-ghost">詳細はこちら</div>
+          </div>
+        </div>
+        <div class="feature-image">
+          <div class="feature-imageGradation"></div>
+          <?php
+          $page_id = 4;
+          $content = get_page($page_id);
+          //アイキャッチ（サムネイル）の取得
+          $image_id = get_post_thumbnail_id();
+          $image_url = wp_get_attachment_image_src($image_id, true);
+          echo get_the_post_thumbnail($content->ID);
+          ?>
+        </div>
       </a>
-      <a class="feature-section">
-        <div class="feature-selectionTitle">大型家具<br>一斉引き取り歓迎</div>
-        <div class="button button-ghost">詳細はこちら</div>
+      <a class="feature-section" href="/index.php?page_id=16">
+        <div class="feature-sectionGradation">
+          <div class="feature-sectionWrap">
+            <div class="feature-sectionTitle">
+              <?php
+              $page_id = 16;
+              $content = get_page($page_id);
+              //タイトルの出力
+              echo $content -> post_title;
+              ?>
+            </div>
+            <div class="button button-ghost">詳細はこちら</div>
+          </div>
+        </div>
+        <div class="feature-image">
+          <div class="feature-imageGradation"></div>
+          <?php
+          $page_id = 16;
+          $content = get_page($page_id);
+          //アイキャッチ（サムネイル）の取得
+          $image_id = get_post_thumbnail_id();
+          $image_url = wp_get_attachment_image_src($image_id, true);
+          echo get_the_post_thumbnail($content->ID);
+          ?>
+        </div>
       </a>
     </div>
   </div>

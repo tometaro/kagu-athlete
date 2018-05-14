@@ -5,10 +5,10 @@
   display: inline-block;
   border-radius: 4px;
   text-align: center;
+  width: 180px;
 
   &-ghost {
   padding: 7px 30px;
-  width: 180px;
   background-color: transparent;
   color: $color-bland;
   border: 1px solid $color-bland;
