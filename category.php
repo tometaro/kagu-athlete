@@ -26,18 +26,16 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="section">
-		<div class="section-inner">
-			<div class="section-innerWrap">
-	 			<ul class="articleList">
-				<?php if(have_posts()): while(have_posts()):the_post(); ?>
-					<?php get_template_part( 'template-parts/articleList' ); ?>
-				<?php endwhile; endif; ?>
-				</ul>
-				<!--ページネーション-->
-				 <?php if (function_exists('responsive_pagination')) {
-				  responsive_pagination($wp_query->max_num_pages);
-				} ?>
-			</div>
+		<div class="section-wrapper section-wrapper-articleList section-wrapper-center">
+ 			<ul class="articleList">
+			<?php if(have_posts()): while(have_posts()):the_post(); ?>
+				<?php get_template_part( 'template-parts/articleList' ); ?>
+			<?php endwhile; endif; ?>
+			</ul>
+			<!--ページネーション-->
+			 <?php if (function_exists('responsive_pagination')) {
+			  responsive_pagination($wp_query->max_num_pages);
+			} ?>
 		</div>
 	</div>
 

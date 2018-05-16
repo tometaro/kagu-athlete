@@ -19,38 +19,37 @@ get_header(); ?>
 				<h1 class="hero-title">家具アスリート</h1>
 				<p class="hero-text"><?php bloginfo('description'); ?></p>
 			</div>
+			<?php get_template_part( 'template-parts/cvArea' ); ?>
 		</div>
 		<div class="hero-logoVisul"></div>
 	</div>
 
-	<?php get_template_part( 'template-parts/cvArea' ); ?>
-
 	<div class="section">
-		<div class="section-wrapper">
+		<div class="section-wrapper section-wrapper-center">
 			<h2 class="title-underLine">ごあいさつ</h2>
 			<p class="section-read">神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで<br>他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
 		</div>
 	</div>
 
-	<?php get_template_part( 'template-parts/feature' ); ?>
+	<div class="section">
+		<?php get_template_part( 'template-parts/feature' ); ?>
+	</div>
 
 	<div class="section">
-			<div class="section-inner">
-				<div class="section-innerWrap">
-					<div class="section-titleWrap">
-						<h2 class="title-underLine">買取実績</h2>
-					</div>
-					<ul class="articleList">
-						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-
-							<?php get_template_part( 'template-parts/articleList' ); ?>
-
-						<?php endwhile; endif; ?>
-					</ul>
-					<!-- <div class="button-wrapper">
-						<a class="button button-ghost" href="">もっと見る</a>
-					</div> -->
+			<div class="section-wrapper section-wrapper-articleList section-wrapper-center">
+				<div class="section-titleWrap">
+					<h2 class="title-underLine">買取実績</h2>
 				</div>
+				<ul class="articleList">
+					<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+
+						<?php get_template_part( 'template-parts/articleList' ); ?>
+
+					<?php endwhile; endif; ?>
+				</ul>
+				<!-- <div class="button-wrapper">
+					<a class="button button-ghost" href="">もっと見る</a>
+				</div> -->
 			</div>
 	</div>
 <?php

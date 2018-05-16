@@ -11,8 +11,11 @@
 
 ?>
 		</main>
-
-		<?php get_template_part( 'template-parts/cvArea' ); ?>
+		<div class="section section-gray">
+			<div class="section-wrapper">
+				<?php get_template_part( 'template-parts/cvArea' ); ?>
+			</div>
+		</div>
 
 		<?php wp_reset_query(); if ( !is_home() && !is_front_page() ) : ?>
 		<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">

@@ -2,21 +2,8 @@
   margin: 0 auto;
   background: $color-base;
 
-  &-inner {
-    width: 100%;
-    background: $color-base;
-    padding: 60px 0;
-    overflow: auto;
-
-    &:nth-child(even){
-        background-color: $color-sub;
-    }
-  }
-
-  &-innerWrap {
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
+  &-gray {
+    background: $color-sub;
   }
 
   &-wrapper {
@@ -24,6 +11,10 @@
       margin: 0 auto;
       padding: 60px 0;
       overflow: hidden;;
+
+      &-center {
+        text-align: center;
+      }
 
       &-narrow {
         width: 770px;
@@ -35,9 +26,9 @@
   //   text-align: center;
   // }
 
-  &-read {
-    text-align: center;
-  }
+  // &-read {
+  //   text-align: center;
+  // }
 
   &-content {
     width: 770px;
@@ -70,7 +61,11 @@
       width: 100%;
       padding: 60px 20px;
 
+      &-articleList {
+        padding: 60px 0;
+      }
     }
+
     &-content {
       width: 100%;
     }
