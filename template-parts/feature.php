@@ -24,7 +24,7 @@
           //アイキャッチ（サムネイル）の取得
           $image_id = get_post_thumbnail_id();
           $image_url = wp_get_attachment_image_src($image_id, true);
-          echo get_the_post_thumbnail($content->ID);
+          echo get_the_post_thumbnail($content->ID ,'large');
           ?>
         </div>
       </a>
@@ -50,7 +50,7 @@
           //アイキャッチ（サムネイル）の取得
           $image_id = get_post_thumbnail_id();
           $image_url = wp_get_attachment_image_src($image_id, true);
-          echo get_the_post_thumbnail($content->ID);
+          echo get_the_post_thumbnail($content->ID, 'large');
           ?>
         </div>
       </a>

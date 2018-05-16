@@ -170,8 +170,7 @@ a {
     overflow: hidden; }
     .section-wrapper-narrow {
       width: 770px; }
-  .section-titleWrap {
-    margin-bottom: 20px;
+  .section-read {
     text-align: center; }
   .section-content {
     width: 770px;
@@ -319,7 +318,7 @@ a {
     z-index: 99; }
   .hero-title {
     width: 100%;
-    font-size: 30px; }
+    font-size: 2.074rem; }
   .hero-text {
     font-size: 1.2rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
@@ -542,7 +541,7 @@ a {
   padding: 8px 30px;
   color: #fff;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 100rem;
   text-align: center;
   width: 180px; }
   .button-ghost {
@@ -956,7 +955,7 @@ button {
       z-index: 999; }
   .feature img {
     width: auto;
-    height: auto;
+    height: 100%;
     min-width: 100%;
     min-height: 100%;
     max-width: inherit;
@@ -978,7 +977,8 @@ button {
   font-size: 1.44rem;
   text-align: center;
   position: relative;
-  padding-bottom: 13px; }
+  padding-bottom: 13px;
+  margin-bottom: 20px; }
   .title-underLine::after {
     content: '';
     border-bottom: 3px solid #00897B;

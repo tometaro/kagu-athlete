@@ -12,9 +12,6 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <meta name="robots" content="noindex">
-  <meta name="robots" content="nofollow">
-  <meta name="robots" content="noarchive">
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->

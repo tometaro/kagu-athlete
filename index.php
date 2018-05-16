@@ -27,7 +27,8 @@ get_header(); ?>
 
 	<div class="section">
 		<div class="section-wrapper">
-			<p>神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで<br>他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
+			<h2 class="title-underLine">ごあいさつ</h2>
+			<p class="section-read">神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで<br>他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
 		</div>
 	</div>
 
@@ -37,7 +38,7 @@ get_header(); ?>
 			<div class="section-inner">
 				<div class="section-innerWrap">
 					<div class="section-titleWrap">
-						<h2 class="title-underLine">買い取り実績</h2>
+						<h2 class="title-underLine">買取実績</h2>
 					</div>
 					<ul class="articleList">
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>

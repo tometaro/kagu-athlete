@@ -30,8 +30,12 @@
       }
   }
 
-  &-titleWrap {
-    margin-bottom: 20px;
+  // &-titleWrap {
+  //   margin-bottom: 20px;
+  //   text-align: center;
+  // }
+
+  &-read {
     text-align: center;
   }
 
@@ -40,6 +44,7 @@
     float: left;
   }
 }
+
 
 @media only screen and (max-width: 1040px) {
   .section {

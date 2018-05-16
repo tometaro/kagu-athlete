@@ -22,6 +22,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+				<?php the_post_thumbnail( 'full' ); ?>
 		</div>
 	</div>
 	<div class="section">
