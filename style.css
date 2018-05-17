@@ -892,6 +892,10 @@ button {
     background-size: cover;
     width: 100%;
     height: 100%; }
+    .cvArea-visual-overay {
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%; }
   .cvArea > * {
     margin: 0;
     text-align: center; }

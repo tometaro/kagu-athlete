@@ -12,6 +12,7 @@
 ?>
 		</main>
 		<div class="section section-gray cvArea-visual">
+			<div class="cvArea-visual-overay">
 			<div class="section-wrapper">
 				<?php get_template_part( 'template-parts/cvArea' ); ?>
 			</div>
