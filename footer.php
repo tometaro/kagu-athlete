@@ -11,7 +11,7 @@
 
 ?>
 		</main>
-		<div class="section section-gray">
+		<div class="section section-gray cvArea-visual">
 			<div class="section-wrapper">
 				<?php get_template_part( 'template-parts/cvArea' ); ?>
 			</div>

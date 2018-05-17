@@ -7,6 +7,16 @@
 
   &-wrap {
     width: 335px;
+    padding: 20px;
+    background: rgba(255,255,255,.9);
+    border-radius: 8px;
+  }
+
+  &-visual {
+    background-image: url(images/cv-visual.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
 
   & > * {
@@ -42,35 +52,10 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   .cvArea {
     &-wrap {
       width: 100%;
     }
-
-    // flex-wrap: wrap;
-    // padding: 30px 20px;
-    // justify-content:space-between;
-    //
-    //
-    // & > * {
-    //   margin: 0 ;
-    // }
-    //
-    // &-title {
-    //   width: 100%;
-    //   margin-bottom: 15px;
-    // }
-    //
-    // a {
-    //   width: 100%;
-    //   padding: 8px 0;
-    //
-    // }
-    //
-    // &-wrap {
-    //   width: 100%;
-    //   margin-top: 20px;
-    // }
   }
 }

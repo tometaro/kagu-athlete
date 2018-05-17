@@ -21,7 +21,12 @@ get_header(); ?>
 			</div>
 			<?php get_template_part( 'template-parts/cvArea' ); ?>
 		</div>
-		<div class="hero-logoVisul"></div>
+		<div class="hero-overay"></div>
+		<div class="hero-visual hero-visual-1st"></div>
+		<div class="hero-visual hero-visual-2nd"></div>
+		<div class="hero-visual hero-visual-3rd"></div>
+		<div class="hero-visual hero-visual-4th"></div>
+
 	</div>
 
 	<div class="section">

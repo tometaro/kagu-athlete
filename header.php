@@ -15,6 +15,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="google-site-verification" content="fMxMltwlPB0nKBVJL0Fd6b-M0lBs2J0migUnRHZvwuw" />
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/icon-font/dist/css/symbols.css" >
 

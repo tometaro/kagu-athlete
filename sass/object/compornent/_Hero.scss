@@ -1,72 +1,81 @@
 .hero {
-  height: 553px;
+  height: 493px;
   background: radial-gradient(#dfdfdf, #f3f3f3);
   text-align: center;
   width: 100%;
+  display: flex;
   position: relative;
-
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 
   &-white {
-    padding-top: 60px;
     width: 100%;
-    // height: 100%;
-    // background: rgba(255,255,255,.7);
-    // display: flex;
-    // align-items: center;  /* 子要素をflexboxにより中央に配置する */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
     z-index: 99;
-    // -webkit- transform: translateY(-50%) translateX(-50%);
+    position: absolute;
   }
 
-  &-wrap {
-    // display: inline-block;
-    // margin: 0 auto
-
-    h1,p {
-      // display: inline-block;
-    }
-  }
 
   &-title {
     width: 100%;
-    font-size: $fontSize-XXL;
-    // svg {
-    //   width: 200px;
-    // }
+    font-size: 40px;
+    color: $color-base;
+
   }
 
   &-text {
     font-size: 1.2rem;
     font-family: $font-sub;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    color: $color-base;
   }
 
-
-  &-logoVisul {
+  &-overay {
     position: absolute;
-    background: url(images/mainVisual.png) ;
-    height: 100%;
+    background: rgba(0,0,0,.4);
     width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: 9;
+    height: 100%;
+  }
+
+  &-visual {
+    background-color: #aaa;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    &-1st {
+      background-image: url(images/hero-visual-1st.png) ;
+    }
+
+    &-2nd {
+      background-image: url(images/hero-visual-2nd.png) ;
+    }
+
+    &-3rd {
+      background-image: url(images/hero-visual-3rd.png) ;
+    }
+
+    &-4th {
+      background-image: url(images/hero-visual-4th.png) ;
+    }
+
   }
 }
 
 @media only screen and (max-width: 768px) {
   .hero {
+    flex-flow: column nowrap;
 
     &-white {
-      padding: 60px 20px 0 20px ;
+      padding: 0 20px 0 20px ;
     }
-
-    &-wrap {
-      margin: 0 15px;
-    }
+    // &-title {
+    //   font-size: $fontSize-XXL;
+    //
+    // }
+    // &-wrap {
+    //   margin: 0 15px;
+    // }
 
     img {
       height: 100%;
