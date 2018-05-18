@@ -3,7 +3,7 @@ textarea {
   outline: 0;
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  // border-radius: 4px;
   font-size: 16px;
   color: #666;
   display: block;
@@ -22,11 +22,13 @@ textarea {
 
 textarea {
   height: 150px;
+  border-radius: 8px;
 }
 
 input {
   display: block;
   padding: 10px;
+  border-radius: 10rem;
 
   &::placeholder{
     color: $color-text-thin;

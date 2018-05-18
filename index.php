@@ -32,7 +32,7 @@ get_header(); ?>
 	<div class="section">
 		<div class="section-wrapper section-wrapper-center">
 			<h2 class="title-underLine">ごあいさつ</h2>
-			<p class="section-read">神戸市灘区を中心に、’家具アスリート’では高級家具から大型家具、アンティーク家具まで<br>他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
+			<p class="section-read">家具アスリート（Kagu Athlete）では兵庫県神戸市灘区を中心に、明石、芦屋、大阪などで関西圏で家具の買取を行なっております。高級家具から大型家具、アンティーク家具まで他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
 		</div>
 	</div>
 

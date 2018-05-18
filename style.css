@@ -399,7 +399,7 @@ a {
   .articleList-image, .articleList-noImage {
     height: 180px;
     width: 320px;
-    border-radius: 4px; }
+    border-radius: 8px; }
   .articleList-image {
     position: absolute;
     overflow: hidden; }
@@ -436,7 +436,7 @@ a {
   background: #f3f3f3;
   padding: 40px 40px;
   margin: 60px 0;
-  border-radius: 4px; }
+  border-radius: 8px; }
   .comments-title {
     font-size: 1.2rem;
     margin-bottom: 20px; }
@@ -636,7 +636,6 @@ textarea {
   outline: 0;
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 4px;
   font-size: 16px;
   color: #666;
   display: block;
@@ -651,11 +650,13 @@ textarea {
     border: 1px solid #999; }
 
 textarea {
-  height: 150px; }
+  height: 150px;
+  border-radius: 8px; }
 
 input {
   display: block;
-  padding: 10px; }
+  padding: 10px;
+  border-radius: 10rem; }
   input::placeholder {
     color: #9f9f9f; }
 
@@ -928,7 +929,7 @@ button {
     overflow: hidden;
     height: 200px;
     width: 50%;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 30px 40px 0 0;
     background: #fff; }
     .feature-section:nth-child(even) {
