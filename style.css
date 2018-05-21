@@ -163,6 +163,8 @@ a {
       text-align: center; }
     .section-wrapper-narrow {
       width: 770px; }
+    .section-wrapper-articleList {
+      width: 1080px; }
   .section-content {
     width: 770px;
     float: left; }
@@ -416,7 +418,7 @@ a {
     background: rgba(0, 0, 0, 0.03);
     display: block; }
   .articleList a {
-    display: block;
+    display: inline-block;
     letter-spacing: 0.1rem; }
   .articleList-title {
     line-height: 2;
@@ -427,6 +429,8 @@ a {
     color: #9f9f9f;
     font-size: 0.833rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
+    .articleList-read span {
+      margin-right: 10px; }
 
 @media screen and (max-width: 320px) {
   .articleList li {

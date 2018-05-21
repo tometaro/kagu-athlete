@@ -4,5 +4,5 @@
     <div class="articleList-noImage"></div>
   </a>
   <a class="articleList-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-  <p class="articleList-read"><?php echo the_time('Y.m.d'); ?><?php the_category(' &bull; '); ?></p>
+  <p class="articleList-read"><span><?php echo the_time('Y.m.d'); ?></span><?php the_category(' &bull; '); ?></p>
 </li>

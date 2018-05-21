@@ -40,8 +40,9 @@
   }
 
   a {
-    display: block;
+    display: inline-block;
     letter-spacing: 0.1rem;
+
   }
 
   &-title {
@@ -55,6 +56,9 @@
     color : $color-text-thin;
     font-size: 0.833rem;
     font-family: $font-sub;
+    span {
+      margin-right: 10px;
+    }
   }
 }
 
