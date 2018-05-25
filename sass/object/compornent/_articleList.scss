@@ -4,7 +4,7 @@
   text-align: center;
   letter-spacing: normal;//firefoxカラム落ち防止
 
-  li {
+  &-item {
     display: inline-table;
     margin: 20px;
     width: 320px;

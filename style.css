@@ -391,7 +391,7 @@ a {
   font-size: 0;
   text-align: center;
   letter-spacing: normal; }
-  .articleList li {
+  .articleList-item {
     display: inline-table;
     margin: 20px;
     width: 320px;
