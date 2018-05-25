@@ -388,6 +388,21 @@ a {
   width: 100%;
   height: auto; }
 
+.article table {
+  width: 100%;
+  text-align: left;
+  margin-top: -28px; }
+  .article table tr {
+    border-bottom: 1px solid #dfdfdf;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    align-items: center; }
+    .article table tr th, .article table tr td {
+      width: 50%; }
+    .article table tr th {
+      padding-right: 20px; }
+
 .articleList {
   display: inline-table;
   font-size: 0;
@@ -446,6 +461,8 @@ a {
     margin-bottom: 20px; }
   .comments p {
     margin-top: 30px; }
+    .comments p input {
+      border-radius: 8px; }
 
 .comment article {
   padding: 15px 0; }
