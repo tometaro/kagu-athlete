@@ -54,6 +54,10 @@ get_header(); ?>
 				<!-- <div class="button-wrapper">
 					<a class="button button-ghost" href="">もっと見る</a>
 				</div> -->
+				<!--ページネーション-->
+				 <?php if (function_exists('responsive_pagination')) {
+					responsive_pagination($wp_query->max_num_pages);
+				} ?>
 			</div>
 	</section>
 <?php
