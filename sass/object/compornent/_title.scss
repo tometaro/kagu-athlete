@@ -2,20 +2,31 @@
 
   &-underLine {
     font-size: $fontSize-L;
-    text-align: center;
+    text-align: left;
     position: relative;
-    padding-bottom: 13px;
-    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 60px;
 
-    &::after {
+    &::before {
       content: '';
-      border-bottom: 3px solid $color-bland;
-      width: 20px;
+      background: $color-bland-thin;
+      width: 4px;
+      height: 20px;
       position: absolute;
       top:0;
       left: 0;
-      right: 0;
       bottom: 0;
+      margin: auto;
+    }
+
+    &::after {
+      content: '';
+      background:  $color-bland;
+      width: 4px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 5px;
       margin: auto;
     }
   }

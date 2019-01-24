@@ -23,6 +23,8 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120001410-1"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/infinite-scroll.pkgd.min.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -37,7 +39,7 @@
 
     <header class="header">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="header-branding">
-        <img class="header-logo-mark" src="<?php bloginfo('template_directory'); ?>/images/logo-mark.svg">
+        <img class="header-logo-mark" src="<?php bloginfo('template_directory'); ?>/images/logo-mark-white.svg">
         <div class="header-logo-type">家具アスリート</div>
       </a>
       <nav class="navi" role="navigation">

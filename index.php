@@ -29,9 +29,9 @@ get_header(); ?>
 	</section>
 
 	<section class="section">
-		<div class="section-wrapper section-wrapper-center">
+		<div class="section-wrapper section-wrapper-center section-read">
 			<h2 class="title-underLine">ごあいさつ</h2>
-			<p class="section-read">家具アスリート（Kagu Athlete）では兵庫県神戸市灘区を中心に、明石、芦屋、大阪など、関西圏で家具の買取を行なっております。高級家具から大型家具、アンティーク家具まで他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
+			<p >家具アスリート（Kagu Athlete）では兵庫県神戸市灘区を中心に、明石、芦屋、大阪など、関西圏で家具の買取を行なっております。高級家具から大型家具、アンティーク家具まで他店では引き取れないような家具も専門知識のあるスタッフが丁寧に出張買取、搬出させていただきます。</p>
 		</div>
 	</section>
 
@@ -40,25 +40,27 @@ get_header(); ?>
 	</section>
 
 	<section class="section">
-			<div class="section-wrapper section-wrapper-articleList section-wrapper-center">
+			<div class="section-wrapper section-wrapper-articleList section-center">
 				<div class="section-titleWrap">
 					<h2 class="title-underLine">買取実績</h2>
 				</div>
-				<div class="articleList">
+				<div class="articleList ">
 					<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 						<?php get_template_part( 'template-parts/articleList' ); ?>
 
 					<?php endwhile; endif; ?>
 				</div>
-				<!-- <div class="button-wrapper">
-					<a class="button button-ghost" href="">もっと見る</a>
-				</div> -->
+
 				<!--ページネーション-->
+				<?php get_template_part( 'infinite-scroll' ); ?>
+
 				 <?php if (function_exists('responsive_pagination')) {
 					responsive_pagination($wp_query->max_num_pages);
 				} ?>
+
 			</div>
+
 	</section>
 <?php
 // get_sidebar();

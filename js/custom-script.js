@@ -55,4 +55,15 @@ jQuery(function($){
       });
     });
   });
+  //infScroll
+var infScroll = new InfiniteScroll( '.articleList', {
+  append: '.articleList-item',
+  path: '.next a',
+  hideNav: '.pagination',
+  button: '#more-button',
+  scrollThreshold: false,
+  status: '.scroller-status',
+  history: 'push',
 });
+});
+
