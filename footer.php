@@ -50,6 +50,17 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+	<script>
+		var infScroll = new InfiniteScroll( '.articleList', {
+			append: '.articleList-item',
+			path: '.next a',
+			hideNav: '.pagination',
+			button: '#more-button',
+			scrollThreshold: false,
+			status: '.scroller-status',
+			history: 'push',
+		});
+	</script>
 
 </body>
 </html>

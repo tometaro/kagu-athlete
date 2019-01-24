@@ -9,7 +9,7 @@
     width: 335px;
     padding: 20px;
     background: rgba(255,255,255,.9);
-    border-radius: 8px;
+    border-radius: 4px;
   }
 
   &-visual {
@@ -39,8 +39,19 @@
 
   a {
     width: 100%;
-    padding: 10px 0;
+  }
 
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: $icon-tel;
+      font-family: "symbols";
+      color: $color-base;
+      font-size: 20px;
+    }
   }
 
   &-buttonWrap {
@@ -64,4 +75,31 @@
       width: 100%;
     }
   }
+}
+
+.textLink {
+  color: $color-bland;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-line {
+    &::before {
+      content: $icon-line;
+      font-family: "symbols";
+      color: $color-bland;
+      font-size: 20px;
+      }
+  }
+
+  &-mail {
+    &::before {
+      content: $icon-mail;
+      font-family: "symbols";
+      color: $color-bland;
+      font-size: 20px;
+      }
+    }
 }

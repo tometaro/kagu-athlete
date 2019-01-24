@@ -1,26 +1,31 @@
 .articleList {
-  display: inline-table;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 0;
-  text-align: center;
-  letter-spacing: normal;//firefoxカラム落ち防止
+  margin: 0 -20px;
 
   &-item {
+    position: relative;
+    margin-bottom: 60px;
     display: inline-table;
-    margin: 20px;
-    width: 320px;
-
+    width: 33.33%;
     text-align: left;
+    padding: 0 20px;
+  }
+
+  &-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
   }
 
   &-image,&-noImage {
-    height: 180px;
-    width: 320px;
-    border-radius: 8px;
+    padding-top : 58%;
+    width: 100%;
   }
 
   &-image {
     position: absolute;
-    overflow: hidden;
   }
 
   img{
@@ -30,6 +35,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
   }
 
   &-noImage {
@@ -40,8 +47,8 @@
   }
 
   a {
-    display: inline-block;
     letter-spacing: 0.1rem;
+    color: $color-text;
 
   }
 
@@ -50,22 +57,42 @@
     margin: 10px 0 5px 0;
     font-size: 1rem;
     font-weight: 600;
+    display: inline-block;
   }
 
   &-read {
     color : $color-text-thin;
-    font-size: 0.833rem;
+    font-size: $fontSize-S;
     font-family: $font-sub;
+    a {
+      color: $color-text-thin;
+    }
     span {
       margin-right: 10px;
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 1040px) {
   .articleList {
-    li {
-      margin: 25px 10px;
+  
+    &-item {
+      width: 50%;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .articleList {
+    display: block;
+    margin: 0;
+
+    &-item {    
+      width: 100%;
+      padding: 0;
+
     }
   }
 }

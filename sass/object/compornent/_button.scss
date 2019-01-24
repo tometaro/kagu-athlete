@@ -6,12 +6,17 @@
   border-radius: 100rem;
   text-align: center;
   width: 180px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
 
   &-ghost {
   padding: 7px 30px;
   background-color: transparent;
   color: $color-bland;
-  border: 1px solid $color-bland;
+  border: 2px solid $color-bland;
 
     &:hover {
       color: $color-text-white;
