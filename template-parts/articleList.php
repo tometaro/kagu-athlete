@@ -1,4 +1,4 @@
-<article class="articleList-item fadeIn　entry">
+<article class="articleList-item fadeIn">
   <a class="articleList-wrap" href="<?php the_permalink(); ?>">
     <div class="articleList-image"><?php the_post_thumbnail( 'large' ); ?></div>
     <div class="articleList-noImage"></div>

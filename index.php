@@ -60,7 +60,7 @@ get_header(); ?>
 				} ?>
 
 			</div>
-
+			<div class="loading "></div>
 	</section>
 <?php
 // get_sidebar();

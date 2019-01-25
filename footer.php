@@ -52,13 +52,13 @@
 	<?php wp_footer(); ?>
 	<script>
 		var infScroll = new InfiniteScroll( '.articleList', {
-			append: '.articleList-item',
-			path: '.next a',
-			hideNav: '.pagination',
-			button: '#more-button',
-			scrollThreshold: false,
-			status: '.scroller-status',
-			history: 'push',
+			append: '.articleList-item',// 記事ブロックを指定
+			path: '.next a',// 次のページリンクを指定
+			hideNav: '.pagination',// 次のページリンクを非表示にする
+			button: '.more-button',// 次のページの記事ブロックを読み込むボタンを指定
+			scrollThreshold: false,// スクロールで自動的に読み込まれる動作を解除
+			status: '.scroller-status',// ステータスのブロックを指定
+			history: false,// ブラウザのアドレスを変更しない
 		});
 	</script>
 

@@ -18,8 +18,8 @@
         </div>
         <div class="feature-image">
           <?php
-          $page_id = 801;
-          // $page_id = 4;
+          // $page_id = 801;
+          $page_id = 4;
           $content = get_page($page_id);
           //アイキャッチ（サムネイル）の取得
           $image_id = get_post_thumbnail_id();
@@ -45,8 +45,8 @@
         </div>
         <div class="feature-image">
           <?php
-          $page_id = 801;
-          // $page_id = 16;
+          // $page_id = 801;
+          $page_id = 16;
           
           $content = get_page($page_id);
           //アイキャッチ（サムネイル）の取得
