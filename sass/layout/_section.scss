@@ -26,6 +26,12 @@
     text-align: center;
   }
 
+  &-flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   // &-titleWrap {
   //   margin-bottom: 20px;
@@ -66,6 +72,9 @@
       p {
         width: 100%;
       }
+    }
+    &-content {
+      width: 100%;
     }
   }
 }

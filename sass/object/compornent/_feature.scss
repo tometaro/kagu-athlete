@@ -10,15 +10,22 @@
   &-section {
     height: 240px;
     width: 50%;
-    display: flex;
-    flex-wrap: wrap;
     padding: 0 20px;
 
     &:hover {
       .button {
         color: $color-text-white;
-        background: $color-bland;      }
+        background: $color-bland;
+      }
     }
+  }
+
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   &-sectionTitle {

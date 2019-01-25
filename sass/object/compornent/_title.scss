@@ -6,12 +6,13 @@
     position: relative;
     padding-left: 20px;
     margin-bottom: 60px;
+    line-height: 1.5;
 
     &::before {
       content: '';
       background: $color-bland-thin;
       width: 4px;
-      height: 20px;
+      height: 70%;
       position: absolute;
       top:0;
       left: 0;
@@ -23,10 +24,10 @@
       content: '';
       background:  $color-bland;
       width: 4px;
-      height: 10px;
+      height: 35%;
       position: absolute;
       left: 0;
-      bottom: 5px;
+      bottom: 50%;
       margin: auto;
     }
   }

@@ -6,16 +6,20 @@
 
   &-wrap {
     width: 1040px;
-    margin: 60px auto;
+    margin: 0 auto;
+    padding: 60px 0;
+
   }
 
   &-navi {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
   }
 
   &-block {
-    width: 100%;
-    padding-right: 20px;
+    width: 33.33%;
+    padding: 0 20px;
 
     li {
       margin: 10px 0;
@@ -23,7 +27,6 @@
 
   }
   &-blanding {
-    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -52,7 +55,16 @@
 @media only screen and (max-width: 1040px) {
   .footer {
     &-wrap {
-      width: 770px;
+      width: 100%;
+      padding: 60px 60px;
+    }
+
+    &-block {
+      width: 50%;
+    }
+    &-blanding {
+      margin-top: 30px;
+      width: 100%;
     }
   }
 }
@@ -69,16 +81,5 @@
       flex-wrap: wrap;
     }
 
-    &-block {
-      width: 50%;
-
-      &:nth-child(even) {
-        padding: 0;
-      }
-    }
-
-    &-blanding {
-      margin-top: 30px;
-    }
   }
 }

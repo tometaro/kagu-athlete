@@ -53,14 +53,15 @@ get_header(); ?>
 				</div>
 
 				<!--ページネーション-->
-				<?php get_template_part( 'infinite-scroll' ); ?>
 
-				 <?php if (function_exists('responsive_pagination')) {
-					responsive_pagination($wp_query->max_num_pages);
-				} ?>
+				<div class="pagination-section">
+						<?php get_template_part( 'infinite-scroll' ); ?>
 
+						<?php if (function_exists('responsive_pagination')) {
+							responsive_pagination($wp_query->max_num_pages);
+						} ?>
+				</div>
 			</div>
-			<div class="loading "></div>
 	</section>
 <?php
 // get_sidebar();

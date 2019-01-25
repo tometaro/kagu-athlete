@@ -1,6 +1,6 @@
 .button {
   background: $color-bland;
-  padding: 8px 30px;
+  padding: 8px 10px;
   color: $color-text-white;
   display: inline-block;
   border-radius: 100rem;
@@ -13,7 +13,7 @@
   transition: all  0.3s ease;
 
   &-ghost {
-  padding: 7px 30px;
+  padding: 7px 10px;
   background-color: transparent;
   color: $color-bland;
   border: 2px solid $color-bland;

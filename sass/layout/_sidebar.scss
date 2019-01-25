@@ -4,9 +4,34 @@
 
   &-title {
     font-size: $fontSize-M;
-    border-left: 3px solid $color-bland;
-    padding: 5px 10px;
-    background: $color-sub;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+
+    &::before {
+      content: '';
+      background: $color-bland-thin;
+      width: 4px;
+      height: 70%;
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &::after {
+      content: '';
+      background:  $color-bland;
+      width: 4px;
+      height: 35%;
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      margin: auto;
+    }
   }
 
   li {
@@ -22,7 +47,7 @@
       position: relative;
 
       &::after {
-        content: $icon-arrowLine-right;
+        content: $icon-arrow-right;
         font-family: "symbols";
         color: $color-bland;
         width: 24px;
@@ -36,7 +61,7 @@
   }
 
   section {
-    margin-top: 40px;
+    margin-top: 60px;
     &:first-child{
       margin-top: 0;
     }
@@ -46,7 +71,7 @@
 
 @media only screen and (max-width: 1040px) {
   .sidebar {
-    width: 770px;
+    width: 100%;
   }
 }
 

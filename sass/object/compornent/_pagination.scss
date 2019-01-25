@@ -3,6 +3,18 @@
   display: flex;
   justify-content: center;
 
+  &-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   li {
     margin: 0 10px;
     // display: inline-block;
@@ -32,9 +44,6 @@
 
   span {
     display: none;
-    // position: absolute;
-    // top: -9999px;
-    // left: -9999px;
   }
 
   .current{
@@ -62,17 +71,6 @@
     content: $icon-arrow-right;
   }
 }
-
-// @media only screen and ( max-width: 768px ) {
-//   .pagination {
-//     .first,
-//     .last {
-//       position: absolute;
-//       top: -9999px;
-//       left: -9999px;
-//     }
-//   }
-// }
 
 @media only screen and ( max-width: 500px ) {
   .pagination li {

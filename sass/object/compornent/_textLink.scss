@@ -1,0 +1,26 @@
+.textLink {
+  color: $color-bland;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-line {
+    &::before {
+      content: $icon-line;
+      font-family: "symbols";
+      color: $color-bland;
+      font-size: 20px;
+      }
+  }
+
+  &-mail {
+    &::before {
+      content: $icon-mail;
+      font-family: "symbols";
+      color: $color-bland;
+      font-size: 20px;
+      }
+    }
+}

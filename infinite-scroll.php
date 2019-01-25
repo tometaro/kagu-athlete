@@ -11,9 +11,14 @@
     // 1ページしかない or 最後のページでは出力しない条件分岐をさせる
     if( $pages != 1 && $paged < $pages ) {
  ?>
-    <div class="button button-ghost more-button" type="button">もっと見る</div>
-    <div class="scroller-status" style="display:none;">
-        <div class="infinite-scroll-request loading"></div>
+    <div class="pagination-section-content">
+        <div class="button button-ghost more-button" type="button">もっと見る</div>
+    </div>
+    
+    <div class="scroller-status pagination-section-content" style="display:none;">
+        <div class="infinite-scroll-request">
+            <div class="loading"></div>
+        </div>
         <!-- <p class="infinite-scroll-last">これ以上は記事がありません</p>
         <p class="infinite-scroll-error">読み込むページがありません</p> -->
     </div>

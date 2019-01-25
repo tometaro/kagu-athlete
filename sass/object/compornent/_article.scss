@@ -30,15 +30,49 @@
 
   h2 {
     font-size: $fontSize-L;
-    padding-bottom: 10px;
-    border-bottom: 2px solid $color-border;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+
+    &::before {
+      content: '';
+      background: $color-bland-thin;
+      width: 4px;
+      height: 70%;
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &::after {
+      content: '';
+      background:  $color-bland;
+      width: 4px;
+      height: 35%;
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      margin: auto;
+    }
   }
 
   h3 {
     font-size: $fontSize-M;
-    border-left: 3px solid $color-bland;
-    padding: 5px 10px;
-    background: $color-sub;
+    border-bottom: 3px solid $color-bland-thin;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: $color-bland;
+      position: absolute;
+      bottom: -3px;
+    }
   }
 
   p {

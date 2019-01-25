@@ -38,7 +38,7 @@
 					<div class="footer-block">
 						<?php wp_nav_menu(array('menu' => 'footermenu2')); ?>
 					</div>
-					<div class="footer-blanding">
+					<div class="footer-block footer-blanding">
 						<img class="footer-logo-mark" src="<?php bloginfo('template_directory'); ?>/images/logo-mark-white.svg">
 						<div class="footer-logo-type">家具アスリート</div>
 					</div>
