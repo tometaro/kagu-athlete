@@ -1,8 +1,8 @@
  .loading {
-  width: 60px;
-  height: 60px;
-  border: 5px solid rgba(0,0,0,0.4);
-  border-top-color: rgba(0,0,0,0.9);
+  width: 40px;
+  height: 40px;
+  border: 5px solid $color-bland-thin;
+  border-top-color: $color-bland;
   border-radius: 50%;
   animation: spin 1.2s linear 0s infinite;
   margin: 60px;
